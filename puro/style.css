@@ -79,6 +79,11 @@ body{
   max-width: 960px;
   margin: 0 auto;
 }
+.container::before, .container::after{
+  content: '';
+  display: table;
+  clear: both;
+}
 /* FILTRO */
 .filtro{
   background: #f5f7fa;
@@ -143,3 +148,56 @@ body{
               80px 0 0 0 currentColor;
 }
 
+/* PRODUTOS */
+.produtos{
+  width: 620px;
+  margin: 0 10px;
+  float: left;
+}
+.produtos h1{
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.produtos li{
+  width: 300px;
+  float: left;
+  padding: 15px;
+  background: #CED3D9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.produtos li:nth-child(even){
+  margin-left: 20px;
+}
+.produtos li img{
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.produtos li span{
+  background: #0B0C12;
+  color: #F5F7FA;
+  padding: 10px;
+  font-size: 0.875em;
+  font-weight: 700;
+  position: relative;
+  top: -15px;
+  border-radius: 5px;
+}
+.produtos li h2{
+  font-size: 0.875em;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+
+/* FOOTER */
+footer{
+  background: #242833;
+  color: #989EA6;
+  text-align: center;
+  padding: 60px 0;
+  font-size: 1em;
+  margin-top: 60px;
+}
